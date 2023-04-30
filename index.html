@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/f33178e519.js" crossorigin="anonymous"></script>
+    <script src="./os1.js" defer ></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"> <span class="head-logo">A</span>J</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="head-text">
+                <p>FULL-STACK DEVELOPER</p>
+                <h1>Hi, i'm <span>Ankit</span> Jaiswal <br> from India M.P</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------------------------------------------- about ------------------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG20220705191806_1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="color: white;">About me</h1>
+                    <p>Hi my name is Ankit Jaiswal. I am from Satna Madhya Pradesh India. I am a B Tech graduate in Information Technology. Passionate about Coding and learning how to code efficiently. Full-Stack web Developer with Comprehensive Problem Solving abilities, Excellent Verbal and written communication Skills, Ability to deal with people Diplomatically, Willingness to learn team Facilitator. Team building, Problem solving, Decision making and good conversation skill.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="operation('skills')">skills</p>
+                        <p class="tab-link" onclick="operation('experience')">experience</p>
+                        <p class="tab-link" onclick="operation('education')">education</p>
+                        <p class="tab-link" onclick="operation('programming')">programming</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Web Developer</span><br>HTML5 , CSS3 , JAVASCRIPT , REACT , XML , BOOTSTRAP , PHP</li>
+                            <li><span>Build Tools</span><br>Visual Studio , Android Studio</li>
+                            <li><span>Database</span><br>Oracle , Mysql , Sqlite</li>
+                            <li><span>Version Control</span><br>Git , Github</li>
+                            <li><span>Programming Concepts</span><br>Oop , Dsa , Dbms , Android Development Basics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1)</span><br> Experience in Core Java, development by applying different concepts like OOPS concepts, 
+                                Collections, String , Exception handling etc. </li>
+                            <li><span>2)</span><br> Worked on testing applications on different browsers like Android, Safari and Chrome . </li>
+                            <li><span>3)</span><br> Experience in using version control tool Git. </li>
+                            <li><span>4)</span><br> Having the self-reliant ability to learn and work on new technology in a short period of time.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor Of Technology (IT)</span><br> Mahatma Gandhi Chitrakoot Gramodaya Vishwavidyalaya <br>
+                                2020 - 2024 <span class="percentage">7.6 aggregate</span></li>
+                            <li><span>Higher Education</span><br> Gyan Gyoti Higher Secondary School Satna M.P <br>
+                                2020 <span class="percentage">86.2%</span></li>
+                            <li><span>Intermediate Education</span><br> Gyan Gyoti Higher Secondary School Satna M.P <br>
+                                2018 <span class="percentage">95%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="programming">
+                        <ul>
+                            <li><span>C/C++</span></li>
+                            <li><span>Core Java</span></li>
+                            <li><span>Advance Java Basics</span></li>
+                            <li><span>Sql , php</span></li>
+                            <li><span>Javascript</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------- SERVICES ------------------------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div class="service">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web development service with front-end and back-end with Excellent user interface and responsive sites</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank" class="btn">Learn more</a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Software Design</h2>
+                    <p>Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success</p>
+                    <a href="https://en.wikipedia.org/wiki/Software_design" target="_blank" class="btn">Learn more</a>
+                </div>
+                <div class="service">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App development services with high quality user interface and attractive app design</p>
+                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development" target="_blank" class="btn">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- Portfolio ------------------------------------- -->
+     
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/m3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Food Website</h3>
+                        <p>I have made many webistes for restorents and hotels which make their work online</p>
+                        <a href=" https://ankit7828.github.io/restorentsite/" target="_blank"><i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/m4.png" alt="">
+                    <div class="layer">
+                        <h3>Travel Webites</h3>
+                        <p>I have made many travelling websites which make their work online</p>
+                        <a href="https://ankit7828.github.io/travelsite/" target="_blank"><i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/m2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Store Management</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, doloremque.</p>
+                        <a href="#"><i class="fa-solid fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-primary">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- contact ------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left-column">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i> ankit78285059ankit@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7828505987</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ankitstra.ankit/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/ANKIT_7828" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/addicted_.01/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ankit-jaiswal-59948923b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/mycv.docx" download class="btn-primary btn2">Download CV</a>
+                </div>
+                <div class="right-column">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your name " name="name" required >
+                        <input type="email" placeholder="Your email" name="email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright ©️2023-24 all rights reserved
+        </div>
+    </div>
+
+    <script>
+         var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right="0";
+    }
+    function closemenu(){
+        sidemen.style.right="-200px";
+    }
+    </script>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3hdFkeE6K-MSsQisg1Ot8iAZbrUNOiryV4JdFNiifOeACUH7z4-2iUPOltb1GeHuj/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "messge sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
